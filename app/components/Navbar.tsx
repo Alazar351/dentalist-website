@@ -14,7 +14,7 @@ export default function Navbar() {
     setOpen(!open);
   };
   return (
-    <nav className="flex items-center justify-between gap-6 px-6 pt-8 md:flex-row">
+    <nav className="flex items-center justify-between gap-6 px-20 pt-8 md:flex-row">
       <div className="flex list-none gap-2">
         <Image src={Logo} width={24} height={24} alt="Logo image" />
         <span className="text-2xl font-extrabold">Dentalist.</span>
@@ -31,7 +31,7 @@ export default function Navbar() {
         <div>
           <div onClick={toggle}>{open ? <X /> : <Menu />}</div>
           {open ? (
-            <div className="absolute ml-[-85px] mt-5 h-[200px] w-[200px] ">
+            <div className="absolute z-50 ml-[-85px] mt-5 h-[200px] w-[200px] rounded bg-white ">
               <div className="flex list-none flex-col items-center justify-center gap-8 pt-2 text-sm font-bold md:gap-6 lg:gap-16 ">
                 <div>About Us</div>
                 <div>New Patient</div>
