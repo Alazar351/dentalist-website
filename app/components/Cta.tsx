@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Cta() {
   return (
-    <div className="mt-52 flex flex-col items-start justify-between gap-24 px-20 lg:flex-row lg:gap-64 ">
+    <section className="mt-52 flex flex-col items-start justify-between gap-24 px-20 lg:flex-row lg:gap-64 ">
       <div className="min-h-[510px] max-w-[400px] rounded-3xl bg-[#DBEFFA]">
         <Image
           src={Stock1}
@@ -29,6 +29,6 @@ export default function Cta() {
           Book appointment
         </Button>
       </div>
-    </div>
+    </section>
   );
 }

@@ -6,7 +6,7 @@ import Insurance from "../../public/assets/insurance.svg";
 
 export default function Features() {
   return (
-    <section className="mx-6 mt-36 flex items-center justify-center rounded-3xl bg-[#DBDEFA]">
+    <section className="mx-6 mt-36 flex items-center justify-center rounded-3xl bg-[#DBDEFA] pb-36">
       <div className="mx-auto pt-24 ">
         <p className="text-xs font-bold uppercase text-[#583FBC]">Features</p>
         <h2 className="mt-4 text-5xl font-bold ">
