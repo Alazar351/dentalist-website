@@ -31,7 +31,7 @@ export default function Hero() {
               <div className="flex w-[240px] items-center gap-8 lg:h-[64px] ">
                 <Image src={Phone} width={64} height={64} alt="phone image" />
                 <div>
-                  <p className="mb-1 text-xs font-bold text-[#583FBC]">
+                  <p className="mb-1 text-xs font-bold uppercase text-[#583FBC]">
                     Dental 24H Emergency
                   </p>
                   <p className="font-bold ">03 482 394 123</p>

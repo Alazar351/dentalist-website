@@ -8,7 +8,7 @@ import Arrow from "../../public/assets/right-purple-arrow.svg";
 export default function Services() {
   return (
     <section className="mx-20 mt-28">
-      <p className="text-xs font-bold text-[#583FBC] ">Services</p>
+      <p className="text-xs font-bold uppercase text-[#583FBC]">Services</p>
       <div className="mt-4 flex  flex-col items-center justify-between gap-12 lg:flex-row">
         <h2 className="text-5xl font-bold lg:max-w-[525px]">
           Feel amazing about your oral health

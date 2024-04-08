@@ -14,8 +14,10 @@ export default function Cta() {
           className="ml-20 mt-16"
         />
       </div>
-      <div className="">
-        <p className="text-xs font-bold text-[#583FBC]">Dental 24H Emergency</p>
+      <div>
+        <p className="text-xs font-bold uppercase text-[#583FBC]">
+          Dental 24H Emergency
+        </p>
         <h2 className="mt-4 text-5xl font-bold lg:max-w-[620px]">
           Gentle, friendly treatment from our locally practice.
         </h2>
