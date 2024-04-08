@@ -1,10 +1,18 @@
-import BlogCard from "./BlogCard";
 import BlogImg1 from "../../public/assets/blogimg1.png";
 import BlogImg2 from "../../public/assets/blogimg2.png";
 import BlogImg3 from "../../public/assets/blogimg3.png";
 import Image from "next/image";
 
-const blogData = [
+interface BlogCard {
+  category: string;
+  title: string;
+  description: string;
+  img: any;
+  day: string;
+  month: string;
+}
+
+const blogData: BlogCard[] = [
   {
     category: "Technology",
     title: "New Technology Make for Dental Operation",
