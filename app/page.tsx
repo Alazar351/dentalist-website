@@ -5,6 +5,7 @@ import Cta from "./components/Cta";
 import Features from "./components/Features";
 import Info from "./components/Info";
 import Testimonial from "./components/Testimonial";
+import Blog from "./components/Blog";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Features />
       <Info />
       <Testimonial />
+      <Blog />
     </main>
   );
 }
