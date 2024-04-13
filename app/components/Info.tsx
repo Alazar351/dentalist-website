@@ -4,16 +4,7 @@ import Check from "../../public/assets/check.svg";
 
 export default function Info() {
   return (
-    <section className="mt-52 flex flex-col-reverse items-start justify-between gap-24 px-20 lg:flex-row-reverse lg:gap-64 ">
-      <div className="min-h-[510px] max-w-[400px] rounded-3xl bg-[#FADBE2]">
-        <Image
-          src={Stock2}
-          alt="expert dentist image"
-          width={480}
-          height={380}
-          className="ml-[-80px] mt-16"
-        />
-      </div>
+    <section className="mt-52 flex flex-col items-start justify-between gap-24 px-20 lg:flex-row lg:gap-64 ">
       <div>
         <p className="text-xs font-bold uppercase text-[#583FBC]">
           Experts in dental
@@ -43,6 +34,15 @@ export default function Info() {
             <p className="text-lg">Discount on all dental treatment</p>
           </div>
         </div>
+      </div>
+      <div className="hidden rounded-3xl bg-[#FADBE2] lg:block lg:min-h-[510px] lg:max-w-[400px]">
+        <Image
+          src={Stock2}
+          alt="expert dentist image"
+          width={480}
+          height={380}
+          className="ml-[-80px] mt-16 "
+        />
       </div>
     </section>
   );

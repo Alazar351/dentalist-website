@@ -6,6 +6,7 @@ import Features from "./components/Features";
 import Info from "./components/Info";
 import Testimonial from "./components/Testimonial";
 import Blog from "./components/Blog";
+import Book from "./components/Book";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Info />
       <Testimonial />
       <Blog />
+      <Book />
     </main>
   );
 }
