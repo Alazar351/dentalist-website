@@ -7,6 +7,7 @@ import Info from "./components/Info";
 import Testimonial from "./components/Testimonial";
 import Blog from "./components/Blog";
 import Book from "./components/Book";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Testimonial />
       <Blog />
       <Book />
+      <Footer />
     </main>
   );
 }
