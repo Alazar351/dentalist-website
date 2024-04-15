@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Stock1 from "../../../public/assets/about-stock1.png";
-import Stock2 from "../../../public/assets/about-stock2.png";
+
 import Doctor1 from "../../../public/assets/about-doctor1.png";
 import Doctor2 from "../../../public/assets/about-doctor2.png";
 import Doctor3 from "../../../public/assets/about-doctor3.png";
@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function AboutUs() {
   return (
     <section className="mx-20 mt-[100px] flex justify-between gap-28">
-      <div className="flex max-w-[500px] flex-col justify-center">
+      <div className="mx-auto flex max-w-[500px] flex-col justify-center lg:mx-0">
         <h2 className="text-[64px] font-bold">About us</h2>
         <p className="mt-8 text-lg">
           We want you to feel amazing about your oral wellness. Not just twice a
