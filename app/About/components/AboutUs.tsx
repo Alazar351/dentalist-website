@@ -5,7 +5,6 @@ import Doctor1 from "../../../public/assets/about-doctor1.png";
 import Doctor2 from "../../../public/assets/about-doctor2.png";
 import Doctor3 from "../../../public/assets/about-doctor3.png";
 import Doctor4 from "../../../public/assets/about-doctor4.png";
-import Video from "../../../public/assets/about-video.png";
 import Image from "next/image";
 
 export default function AboutUs() {
