@@ -3,15 +3,15 @@ import Stock2 from "../../../public/assets/about-stock2.png";
 import { Button } from "@/components/ui/button";
 export default function Priority() {
   return (
-    <section className="mt-[156px] flex flex-col-reverse items-start justify-between gap-24 px-20 lg:flex-row lg:gap-64 ">
-      <div className="relative">
+    <section className="mt-[200px] flex flex-col-reverse items-start justify-between gap-24 px-20 lg:flex-row lg:gap-64 ">
+      <div className="relative mt-[-42px]">
         <div className="hidden h-[306px] w-[400px] overflow-visible rounded-3xl bg-[#DBEFFA] lg:block"></div>
         <Image
           src={Stock2}
           alt="dentist with patient image"
           width={550}
           height={380}
-          className="absolute left-[70px] top-[70px] hidden min-h-[380px] min-w-[550px] lg:block"
+          className="absolute left-[70px] top-[70px] hidden min-h-[352px] min-w-[510px] lg:block"
         />
       </div>
       <div className="mx-auto max-w-[510px] lg:mx-0">
