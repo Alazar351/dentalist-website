@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.accordion-gradient[data-state="open"] {
+  background: linear-gradient(rgb(219, 239, 250, 0.5), rgb(255, 249, 249, 0.2));
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

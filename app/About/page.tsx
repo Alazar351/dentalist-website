@@ -4,6 +4,7 @@ import Priority from "./components/Priority";
 import Safety from "./components/Safety";
 import Team from "./components/Team";
 import Faq from "./components/Faq";
+import Footer from "../components/Footer";
 
 export default function About() {
   return (
@@ -14,6 +15,7 @@ export default function About() {
       <Safety />
       <Team />
       <Faq />
+      <Footer />
     </>
   );
 }
