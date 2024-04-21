@@ -5,7 +5,10 @@ import Appointment from "./Appointment";
 
 export default function Book() {
   return (
-    <section className="mx-20 mt-[200px] flex flex-col gap-28 lg:flex-row lg:justify-between  ">
+    <section
+      id="Appointment"
+      className="mx-20 mt-[200px] flex flex-col gap-28 lg:flex-row lg:justify-between  "
+    >
       <Image
         src={Map}
         alt="map image"

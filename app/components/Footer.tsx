@@ -6,17 +6,18 @@ import Location from "../../public/assets/location.svg";
 import Facebook from "../../public/assets/facebook.svg";
 import Twitter from "../../public/assets/twitter.svg";
 import Instagram from "../../public/assets/instagram.svg";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <section className="flex min-h-[600px] flex-wrap justify-between gap-[150px] bg-[#041434] px-20 pb-[50px] pt-24">
       <div>
-        <div className="flex list-none gap-2 ">
+        <Link href={"/"} className="flex list-none gap-2 ">
           <Image src={Logo} width={24} height={24} alt="Logo image" />
           <span className="text-2xl font-extrabold text-white">
             Dentalist<span className="text-[#7B55EC]">.</span>
           </span>
-        </div>
+        </Link>
         <p className="mt-8 max-w-[510px] text-lg text-white opacity-60">
           Dental Care Seattle is a top-rated local practice for cosmetic,
           preventative, and restorative dentistry on First Hill
@@ -47,11 +48,21 @@ export default function Footer() {
         <p className="text-xs font-bold uppercase text-white opacity-60">
           Quick links
         </p>
-        <p className="text-sm font-bold text-white">About Us</p>
-        <p className="text-sm font-bold text-white">Dental Services</p>
-        <p className="text-sm font-bold text-white">Dentist</p>
+
+        <Link href={"/About"} className="text-sm font-bold text-white">
+          About us
+        </Link>
+        <Link href={"/Service"} className="text-sm font-bold text-white">
+          Dental Service
+        </Link>
+
+        <Link href={"/#Services"} className="text-sm font-bold text-white">
+          Dentist
+        </Link>
         <p className="text-sm font-bold text-white">Blog</p>
-        <p className="text-sm font-bold text-white">FAQs</p>
+        <Link href={"/About#Faq"} className="text-sm font-bold text-white">
+          FAQs
+        </Link>
       </div>
       <div className="flex flex-col gap-8">
         <p className="text-xs font-bold uppercase text-white opacity-60">

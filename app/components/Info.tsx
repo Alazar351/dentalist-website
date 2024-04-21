@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import Stock2 from "../../public/assets/stock2.svg";
 import Check from "../../public/assets/check.svg";

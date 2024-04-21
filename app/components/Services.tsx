@@ -4,10 +4,11 @@ import Implants from "../../public/assets/implants.svg";
 import Whitening from "../../public/assets/whitening.svg";
 import RootCanal from "../../public/assets/root-canal.svg";
 import Arrow from "../../public/assets/right-purple-arrow.svg";
+import Link from "next/link";
 
 export default function Services() {
   return (
-    <section className="mx-20 mt-28">
+    <section id="Services" className="mx-20 mt-28">
       <p className="text-xs font-bold uppercase text-[#583FBC]">Services</p>
       <div className="mt-4 flex  flex-col items-start justify-between gap-12 lg:flex-row">
         <h2 className="text-5xl font-bold lg:max-w-[525px]">
@@ -19,7 +20,10 @@ export default function Services() {
         </p>
       </div>
       <div className="mt-24 grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-4 ">
-        <div className=" flex  flex-col items-center justify-center rounded-3xl border p-4">
+        <Link
+          href={"/Service"}
+          className=" flex  flex-col items-center justify-center rounded-3xl border p-4"
+        >
           <div className="flex min-h-[200px] w-full min-w-[220px] flex-col items-center justify-center rounded-3xl bg-[#DBEFFA] ">
             <Image
               src={Dentures}
@@ -32,8 +36,11 @@ export default function Services() {
           <p className="text-center text-gray-700 opacity-70 ">
             Lorem ipsum is placeholder text commonly used in the graphic.
           </p>
-        </div>
-        <div className=" flex  flex-col items-center justify-center rounded-3xl border p-4">
+        </Link>
+        <Link
+          href={"/Service"}
+          className=" flex  flex-col items-center justify-center rounded-3xl border p-4"
+        >
           <div className="flex min-h-[200px] w-full min-w-[220px] flex-col items-center justify-center rounded-3xl bg-[#DBDEFA] ">
             <Image
               src={Implants}
@@ -46,8 +53,11 @@ export default function Services() {
           <p className="text-center text-gray-700 opacity-70 ">
             Lorem ipsum is placeholder text commonly used in the graphic.
           </p>
-        </div>
-        <div className=" flex  flex-col items-center justify-center rounded-3xl border p-4">
+        </Link>
+        <Link
+          href={"/Service"}
+          className=" flex  flex-col items-center justify-center rounded-3xl border p-4"
+        >
           <div className="flex min-h-[200px] w-full min-w-[220px] flex-col items-center justify-center rounded-3xl bg-[#F6DBFA] ">
             <Image
               src={Whitening}
@@ -60,8 +70,11 @@ export default function Services() {
           <p className="text-center text-gray-700 opacity-70 ">
             Lorem ipsum is placeholder text commonly used in the graphic.
           </p>
-        </div>
-        <div className=" flex  flex-col items-center justify-center rounded-3xl border p-4">
+        </Link>
+        <Link
+          href={"/Service"}
+          className=" flex  flex-col items-center justify-center rounded-3xl border p-4"
+        >
           <div className="flex min-h-[200px] w-full min-w-[220px] flex-col items-center justify-center rounded-3xl bg-[#FADBE2] ">
             <Image
               src={RootCanal}
@@ -76,12 +89,15 @@ export default function Services() {
           <p className="text-center text-gray-700 opacity-70 ">
             Lorem ipsum is placeholder text commonly used in the graphic.
           </p>
-        </div>
+        </Link>
       </div>
-      <div className="mx-auto mt-28 flex min-h-[64px] max-w-[240px] items-center justify-center gap-4 rounded-2xl bg-[#583FBC] bg-opacity-10">
+      <Link
+        href={"/Service"}
+        className="mx-auto mt-28 flex min-h-[64px] max-w-[240px] items-center justify-center gap-4 rounded-2xl bg-[#583FBC] bg-opacity-10"
+      >
         <p className="font-bold text-[#583FBC]">View all service list</p>
         <Image src={Arrow} alt="arrow image" width={24} height={24} />
-      </div>
+      </Link>
     </section>
   );
 }

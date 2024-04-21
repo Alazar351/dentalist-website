@@ -110,10 +110,7 @@ export default function Appointment() {
             return (
               <FormItem>
                 <FormLabel>Services</FormLabel>
-                <Select
-                  onValueChange={field.onChange}
-                  defaultValues={field.value}
-                >
+                <Select onValueChange={field.onChange}>
                   <FormControl>
                     <SelectTrigger>
                       <SelectValue placeholder="Select Service" />

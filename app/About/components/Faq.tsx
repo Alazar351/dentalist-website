@@ -7,7 +7,10 @@ import {
 
 export default function Faq() {
   return (
-    <section className=" mx-auto mt-[200px] flex flex-col items-center justify-center px-10 pb-[200px]">
+    <section
+      id="Faq"
+      className=" mx-auto mt-[200px] flex flex-col items-center justify-center px-10 pb-[200px]"
+    >
       <div className="mb-[60px]">
         <p className="text-center text-xs font-bold uppercase text-[#583FBC]">
           Faq
@@ -20,7 +23,6 @@ export default function Faq() {
         type="single"
         collapsible
         className="border-t-4 border-t-[#583FBC]"
-        id="Faq"
       >
         <AccordionItem
           value="item-1"

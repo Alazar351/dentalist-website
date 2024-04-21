@@ -2,6 +2,7 @@ import Image from "next/image";
 import Hero1 from "../../public/assets/hero1.svg";
 import Phone from "../../public/assets/phone.svg";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -25,9 +26,11 @@ export default function Hero() {
               mockups.
             </p>
             <div className="flex flex-col justify-between gap-4 lg:flex-row lg:items-center ">
-              <Button className="h-12 w-[240px] rounded-[10px] bg-[#583FBC] font-bold text-white hover:bg-[#583FBC] hover:text-white lg:h-[64px] ">
-                Book appointment
-              </Button>
+              <Link href={"/#Appointment"}>
+                <Button className="h-12 w-[240px] rounded-[10px] bg-[#583FBC] font-bold text-white hover:bg-[#583FBC] hover:text-white lg:h-[64px] ">
+                  Book appointment
+                </Button>
+              </Link>
               <div className="flex w-[240px] items-center gap-8 lg:h-[64px] ">
                 <Image src={Phone} width={64} height={64} alt="phone image" />
                 <div>
