@@ -59,7 +59,9 @@ export default function Footer() {
         <Link href={"/#Services"} className="text-sm font-bold text-white">
           Dentist
         </Link>
-        <p className="text-sm font-bold text-white">Blog</p>
+        <Link href={"/Blog"} className="text-sm font-bold text-white">
+          Blog
+        </Link>
         <Link href={"/About#Faq"} className="text-sm font-bold text-white">
           FAQs
         </Link>

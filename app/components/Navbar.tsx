@@ -47,9 +47,11 @@ export default function Navbar() {
       )}
 
       <div className="list-none">
-        <Button className="rounded-[10px] bg-[#583FBC] font-bold text-white hover:bg-[#583FBC] hover:text-white ">
-          Book appointment
-        </Button>
+        <Link href={"/#Appointment"}>
+          <Button className="rounded-[10px] bg-[#583FBC] font-bold text-white hover:bg-[#583FBC] hover:text-white ">
+            Book appointment
+          </Button>
+        </Link>
       </div>
     </nav>
   );
