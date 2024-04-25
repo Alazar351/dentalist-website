@@ -1,4 +1,6 @@
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import BlogCards from "./components/BlogCards";
 import News from "./components/News";
 
 export default function Blog() {
@@ -6,6 +8,8 @@ export default function Blog() {
     <>
       <Navbar />
       <News />
+      <BlogCards />
+      <Footer />
     </>
   );
 }

@@ -42,7 +42,7 @@ const blogData: BlogCard[] = [
   },
 ];
 
-export default function Blog() {
+export default function BlogCard() {
   return (
     <section className="mt-36 flex flex-col items-center">
       <p className="text-xs font-bold uppercase text-[#583FBC]">Blog</p>

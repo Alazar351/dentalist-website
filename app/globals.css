@@ -6,6 +6,15 @@
   background: linear-gradient(rgb(219, 239, 250, 0.5), rgb(255, 249, 249, 0.2));
 }
 
+.pagination * [aria-current="page"] {
+  background-color: #583fbc;
+  color: white;
+}
+.pagination * [aria-current="page"]:hover {
+  background-color: rgb(131, 100, 255);
+  color: white;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

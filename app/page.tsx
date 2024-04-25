@@ -5,7 +5,7 @@ import Cta from "./components/Cta";
 import Features from "./components/Features";
 import Info from "./components/Info";
 import Testimonial from "./components/Testimonial";
-import Blog from "./components/Blog";
+import BlogCard from "./components/BlogCard";
 import Book from "./components/Book";
 import Footer from "./components/Footer";
 
@@ -19,7 +19,7 @@ export default function Home() {
       <Features />
       <Info />
       <Testimonial />
-      <Blog />
+      <BlogCard />
       <Book />
       <Footer />
     </main>
