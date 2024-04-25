@@ -1,10 +1,10 @@
 import Image from "next/image";
-import BlogImg1 from "../../../public/assets/blogimg1.png";
-import BlogImg2 from "../../../public/assets/blogimg2.png";
-import BlogImg3 from "../../../public/assets/blogimg3.png";
-import BlogImg4 from "../../../public/assets/blogimg4.png";
-import BlogImg5 from "../../../public/assets/blogimg5.png";
-import BlogImg6 from "../../../public/assets/blogimg6.png";
+import BlogImg1 from "@/public/assets/blogimg1.png";
+import BlogImg2 from "@/public/assets/blogimg2.png";
+import BlogImg3 from "@/public/assets/blogimg3.png";
+import BlogImg4 from "@/public/assets/blogimg4.png";
+import BlogImg5 from "@/public/assets/blogimg5.png";
+import BlogImg6 from "@/public/assets/blogimg6.png";
 import {
   Pagination,
   PaginationContent,
@@ -14,6 +14,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import Link from "next/link";
 
 interface BlogCard {
   category: string;
@@ -84,14 +85,17 @@ const blogData: BlogCard[] = [
 export default function BlogCards() {
   return (
     <section className="mt-36 flex flex-col items-center">
-      <p className="text-xs font-bold uppercase text-[#583FBC]">Blog</p>
       <h2 className="mt-4 text-center text-5xl font-bold ">
         Stay updated with our latest news
       </h2>
       <div className="mx-20 mt-24 grid grid-cols-1 items-center justify-center gap-10 lg:grid-cols-3">
         {blogData.map((card, index) => {
           return (
-            <div key={index} className=" rounded-3xl border pb-[42px]">
+            <Link
+              href={"/Blog/Post"}
+              key={index}
+              className=" rounded-3xl border pb-[42px]"
+            >
               <div className="relative mx-4 mt-4 ">
                 <Image
                   src={card.img}
@@ -116,7 +120,7 @@ export default function BlogCards() {
                   {card.description}
                 </p>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>

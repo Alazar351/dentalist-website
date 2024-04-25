@@ -1,3 +1,4 @@
+import Link from "next/link";
 import BlogImg1 from "../../public/assets/blogimg1.png";
 import BlogImg2 from "../../public/assets/blogimg2.png";
 import BlogImg3 from "../../public/assets/blogimg3.png";
@@ -44,15 +45,18 @@ const blogData: BlogCard[] = [
 
 export default function BlogCard() {
   return (
-    <section className="mt-36 flex flex-col items-center">
-      <p className="text-xs font-bold uppercase text-[#583FBC]">Blog</p>
+    <section className="flex flex-col items-center">
       <h2 className="mt-4 text-center text-5xl font-bold ">
         Stay updated with our latest news
       </h2>
       <div className="mx-20 mt-24 grid grid-cols-1 items-center justify-center gap-10 lg:grid-cols-3">
         {blogData.map((card, index) => {
           return (
-            <div key={index} className=" rounded-3xl border pb-[42px]">
+            <Link
+              href={"/Blog/Post"}
+              key={index}
+              className=" rounded-3xl border pb-[42px]"
+            >
               <div className="relative mx-4 mt-4 ">
                 <Image
                   src={card.img}
@@ -77,7 +81,7 @@ export default function BlogCard() {
                   {card.description}
                 </p>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>

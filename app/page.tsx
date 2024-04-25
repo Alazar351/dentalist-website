@@ -19,7 +19,12 @@ export default function Home() {
       <Features />
       <Info />
       <Testimonial />
-      <BlogCard />
+      <div>
+        <p className="mt-36 flex flex-col items-center text-xs font-bold uppercase text-[#583FBC]">
+          Blog
+        </p>
+        <BlogCard />
+      </div>
       <Book />
       <Footer />
     </main>
