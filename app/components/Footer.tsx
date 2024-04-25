@@ -32,14 +32,21 @@ export default function Footer() {
               alt="facebook logo"
               width={24}
               height={24}
-              className="max-h-6"
+              className="max-h-6 cursor-pointer"
             />
-            <Image src={Twitter} alt="twitter logo" width={24} height={24} />
+            <Image
+              src={Twitter}
+              alt="twitter logo"
+              className="cursor-pointer"
+              width={24}
+              height={24}
+            />
             <Image
               src={Instagram}
               alt="instagram logo"
               width={24}
               height={24}
+              className="cursor-pointer"
             />
           </div>
         </div>
@@ -50,7 +57,7 @@ export default function Footer() {
         </p>
 
         <Link href={"/About"} className="text-sm font-bold text-white">
-          About us
+          About Us
         </Link>
         <Link href={"/Service"} className="text-sm font-bold text-white">
           Dental Service
@@ -76,7 +83,9 @@ export default function Footer() {
             <p className="mb-1 text-xs font-bold uppercase text-white opacity-60">
               Phone Number
             </p>
-            <p className="font-bold text-white">+003 482 394 123</p>
+            <p className="cursor-pointer font-bold text-white">
+              +003 482 394 123
+            </p>
           </div>
         </div>
         <div className="flex w-full items-center gap-8 lg:h-[64px] ">
@@ -85,7 +94,7 @@ export default function Footer() {
             <p className="mb-1 text-xs font-bold uppercase text-white opacity-60">
               Open Hour
             </p>
-            <p className="font-bold text-white">09:00 AM - 18:00Pm</p>
+            <p className="font-bold text-white">09:00 AM - 18:00PM</p>
           </div>
         </div>
         <div className="flex w-full items-center gap-8 lg:h-[64px] ">
@@ -94,7 +103,7 @@ export default function Footer() {
             <p className="mb-1 text-xs font-bold uppercase text-white opacity-60">
               Clinic Address
             </p>
-            <p className="font-bold text-white">
+            <p className="cursor-pointer font-bold text-white">
               35 West Dental Street California 1004
             </p>
           </div>
@@ -103,8 +112,8 @@ export default function Footer() {
       <div className="flex w-full items-center justify-between">
         <p className="text-white opacity-60">©Dentalist. All Right Reserved</p>
         <div className="flex w-full max-w-[220px] justify-between">
-          <p className="text-white">Terms of Use</p>
-          <p className="text-white">Privacy Policy</p>
+          <p className="cursor-pointer text-white">Terms of Use</p>
+          <p className="cursor-pointer text-white">Privacy Policy</p>
         </div>
       </div>
     </section>

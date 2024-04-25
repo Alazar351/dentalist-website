@@ -26,7 +26,9 @@ export default function Home() {
         <BlogCard />
       </div>
       <Book />
-      <Footer />
+      <div className="mt-[150px]">
+        <Footer />
+      </div>
     </main>
   );
 }

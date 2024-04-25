@@ -26,7 +26,7 @@ export default function Navbar() {
           <Link href={"/About"}>About us</Link>
           <Link href={"/#Features"}>New Patient</Link>
           <Link href={"/#Services"}>Our Service</Link>
-          <div>Contact Us</div>
+          <Link href={"/Contact"}>Contact Us</Link>
         </div>
       ) : (
         <div>
@@ -37,7 +37,7 @@ export default function Navbar() {
                 <Link href={"/About"}>About Us</Link>
                 <Link href={"/#Features"}>New Patient</Link>
                 <Link href={"/#Services"}>Our Service</Link>
-                <div>Contact Us</div>
+                <Link href={"/Contact"}>Contact Us</Link>
               </div>
             </div>
           ) : (

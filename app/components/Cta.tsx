@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Stock1 from "../../public/assets/stock1.svg";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Cta() {
   return (
@@ -25,9 +26,11 @@ export default function Cta() {
           Lorem ipsum is placeholder text commonly used in the graphic, print,
           and publishing industries for previewing layouts and visual mockups.
         </p>
-        <Button className="mt-[72px] h-12 w-[240px] rounded-[10px] bg-[#583FBC] font-bold text-white hover:bg-[#583FBC] hover:text-white lg:h-[64px] ">
-          Book appointment
-        </Button>
+        <Link href={"#Appointment"}>
+          <Button className="mt-[72px] h-12 w-[240px] rounded-[10px] bg-[#583FBC] font-bold text-white hover:bg-[#583FBC] hover:text-white lg:h-[64px] ">
+            Book appointment
+          </Button>
+        </Link>
       </div>
     </section>
   );

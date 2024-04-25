@@ -9,16 +9,18 @@ export default function Safety() {
           and publishing industries for previewing layouts and visual mockups.
         </p>
       </div>
-      <video
-        width="320"
-        height="240"
-        controls
-        preload="auto"
-        className=" mt-[-35%] w-full rounded-full px-[18%] md:mt-[-30%] lg:mt-[-25%]"
-      >
-        <source src="/video/about.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div className="mt-[-35%] px-[18%] md:mt-[-30%] lg:mt-[-25%]">
+        <video
+          width="320"
+          height="240"
+          controls
+          preload="auto"
+          className="w-full rounded-3xl"
+        >
+          <source src="/video/about.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </section>
   );
 }
