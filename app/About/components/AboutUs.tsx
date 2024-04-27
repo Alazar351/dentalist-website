@@ -13,8 +13,8 @@ export default function AboutUs() {
           year, but every time you take a bite, tell a joke, laugh, or share a
           kiss.
         </p>
-        <Link href={"/Contact"}>
-          <Button className="mt-[72px] rounded-[10px] bg-[#583FBC] font-bold text-white hover:bg-[#583FBC] hover:text-white lg:max-w-[240px] ">
+        <Link href={"/Contact"} className="mt-[72px] lg:max-w-[240px]">
+          <Button className="  w-full rounded-[10px] bg-[#583FBC] font-bold text-white hover:bg-[#583FBC] hover:text-white ">
             Contact Us
           </Button>
         </Link>
