@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Stock2 from "../../../public/assets/about-stock2.png";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 export default function Priority() {
   return (
     <section className="mt-[200px] flex flex-col-reverse items-start justify-between gap-24 px-20 lg:flex-row lg:gap-64 ">
@@ -25,9 +26,11 @@ export default function Priority() {
           Lorem ipsum is placeholder text commonly used in the graphic, print,
           and publishing industries for previewing layouts and visual mockups.
         </p>
-        <Button className="mt-[72px] h-12 w-full rounded-[10px] bg-[#583FBC] font-bold text-white hover:bg-[#583FBC] hover:text-white lg:h-[64px] lg:w-[240px] ">
-          Book appointment
-        </Button>
+        <Link href={"/#Appointment"}>
+          <Button className="mt-[72px] h-12 w-full rounded-[10px] bg-[#583FBC] font-bold text-white hover:bg-[#583FBC] hover:text-white lg:h-[64px] lg:w-[240px] ">
+            Book appointment
+          </Button>
+        </Link>
       </div>
     </section>
   );

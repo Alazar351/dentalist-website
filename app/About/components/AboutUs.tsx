@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Stock1 from "../../../public/assets/about-stock1.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutUs() {
   return (
@@ -12,9 +13,11 @@ export default function AboutUs() {
           year, but every time you take a bite, tell a joke, laugh, or share a
           kiss.
         </p>
-        <Button className="mt-[72px] rounded-[10px] bg-[#583FBC] font-bold text-white hover:bg-[#583FBC] hover:text-white lg:max-w-[240px] ">
-          Contact Us
-        </Button>
+        <Link href={"/Contact"}>
+          <Button className="mt-[72px] rounded-[10px] bg-[#583FBC] font-bold text-white hover:bg-[#583FBC] hover:text-white lg:max-w-[240px] ">
+            Contact Us
+          </Button>
+        </Link>
       </div>
       <Image
         src={Stock1}
