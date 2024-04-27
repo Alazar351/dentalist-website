@@ -15,44 +15,44 @@ export default function Navbar() {
     setOpen(!open);
   };
   return (
-    <nav className="flex items-center justify-between gap-6 px-20 pt-8 md:flex-row">
-      <Link href={"/"} className="flex list-none gap-2">
-        <Image src={Logo} width={24} height={24} alt="Logo image" />
-        <span className="text-2xl font-extrabold">Dentalist.</span>
-      </Link>
-
-      {isDesktop ? (
-        <div className="flex list-none gap-8 text-sm font-bold md:gap-6 lg:gap-16 ">
-          <Link href={"/About"}>About us</Link>
-          <Link href={"/#Features"}>New Patient</Link>
-          <Link href={"/#Services"}>Our Service</Link>
-          <Link href={"/Contact"}>Contact Us</Link>
-        </div>
-      ) : (
-        <div>
-          <div onClick={toggle}>{open ? <X /> : <Menu />}</div>
-          {open ? (
-            <div className="absolute z-50 ml-[-85px] mt-5 h-[200px] w-[200px] rounded bg-white ">
-              <div className="flex list-none flex-col items-center justify-center gap-8 pt-2 text-sm font-bold md:gap-6 lg:gap-16 ">
-                <Link href={"/About"}>About Us</Link>
-                <Link href={"/#Features"}>New Patient</Link>
-                <Link href={"/#Services"}>Our Service</Link>
-                <Link href={"/Contact"}>Contact Us</Link>
-              </div>
-            </div>
-          ) : (
-            ""
-          )}
-        </div>
-      )}
-
-      <div className="list-none">
-        <Link href={"/#Appointment"}>
-          <Button className="rounded-[10px] bg-[#583FBC] font-bold text-white hover:bg-[#583FBC] hover:text-white ">
-            Book appointment
-          </Button>
+    <div className="sticky top-0 z-50 bg-white pb-6 ">
+      <nav className="flex items-center justify-between gap-6 px-20 pt-8 md:flex-row">
+        <Link href={"/"} className="flex list-none gap-2">
+          <Image src={Logo} width={24} height={24} alt="Logo image" />
+          <span className="text-2xl font-extrabold">Dentalist.</span>
         </Link>
-      </div>
-    </nav>
+        {isDesktop ? (
+          <div className="flex list-none gap-8 text-sm font-bold md:gap-6 lg:gap-16 ">
+            <Link href={"/About"}>About us</Link>
+            <Link href={"/#Features"}>New Patient</Link>
+            <Link href={"/#Services"}>Our Service</Link>
+            <Link href={"/Contact"}>Contact Us</Link>
+          </div>
+        ) : (
+          <div>
+            <div onClick={toggle}>{open ? <X /> : <Menu />}</div>
+            {open ? (
+              <div className="absolute z-50 ml-[-85px] mt-5 h-[200px] w-[200px] rounded bg-white ">
+                <div className="flex list-none flex-col items-center justify-center gap-8 pt-2 text-sm font-bold md:gap-6 lg:gap-16 ">
+                  <Link href={"/About"}>About Us</Link>
+                  <Link href={"/#Features"}>New Patient</Link>
+                  <Link href={"/#Services"}>Our Service</Link>
+                  <Link href={"/Contact"}>Contact Us</Link>
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
+          </div>
+        )}
+        <div className="list-none">
+          <Link href={"/#Appointment"}>
+            <Button className="rounded-[10px] bg-[#583FBC] font-bold text-white hover:bg-[#583FBC] hover:text-white ">
+              Book appointment
+            </Button>
+          </Link>
+        </div>
+      </nav>
+    </div>
   );
 }

@@ -14,6 +14,7 @@ export default function Hero() {
           width={1392}
           height={700}
           alt="hero image"
+          priority
         />
         <div>
           <div className=" absolute top-0 z-[1] flex max-w-xs flex-col gap-4  md:mt-[8%] lg:ml-[0%] lg:mt-[10%] lg:max-w-[550px] xl:ml-[5%]  ">
