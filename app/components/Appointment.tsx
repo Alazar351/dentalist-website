@@ -61,9 +61,7 @@ export default function Appointment() {
     },
   });
 
-  const handleSubmit = (values: z.infer<typeof formSchema>) => {
-    console.log({ values });
-  };
+  const handleSubmit = (values: z.infer<typeof formSchema>) => {};
 
   return (
     <Form {...form}>
