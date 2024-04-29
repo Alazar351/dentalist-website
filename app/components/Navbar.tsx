@@ -23,7 +23,7 @@ export default function Navbar() {
         </Link>
         {isDesktop ? (
           <div className="flex list-none gap-8 text-sm font-bold md:gap-6 lg:gap-16 ">
-            <Link href={"/About"}>About us</Link>
+            <Link href={"/About"}>About Us</Link>
             <Link href={"/#Features"}>New Patient</Link>
             <Link href={"/#Services"}>Our Service</Link>
             <Link href={"/Contact"}>Contact Us</Link>
